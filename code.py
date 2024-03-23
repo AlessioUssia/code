@@ -23,17 +23,19 @@ class Coda_propritaria:
         return val_min
 
 
-"""c = Coda_propritaria()""" #---> stesso comportamento
+d = Coda_propritaria() #---> stesso comportamento
+
+d.put(3)
+d.put(6)
+d.put(9)
+print(d.pop())
+d.put(1)
+print(d.pop())
+print(d.pop())
+print(d.pop())
+
 c = queue.PriorityQueue()
-"""c.put((2, "Paolo"))
-c.put((1, "Giulia"))
-c.put((2, "Antonio"))
-print(c.pop())
-c.put((1, "Anna"))
-print(c.pop())
-print(c.pop())
-print(c.pop())
-"""
+
 c.put((2, "Paolo"))
 c.put((1, "Giulia"))
 c.put((2, "Antonio"))
